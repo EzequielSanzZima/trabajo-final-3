@@ -88,6 +88,11 @@ footer{
                 color:#BB8FCE;
             }
         }
+        .fa-paw:before{
+            color: map-get($iconos, color);
+            padding-right: map-get($iconos, padding-right );
+        }
+
         .ulContactoFooter{
             @extend .ulLinkFooter;
             li{

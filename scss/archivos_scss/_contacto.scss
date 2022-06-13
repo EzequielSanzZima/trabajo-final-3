@@ -41,8 +41,8 @@
 
 
 .fa-envelope:before, .fa-phone:before, .fa-map:before, .fa-clock-four:before, .fa-clock:before{ 
-  color: #4A235A;
-  padding-right: 5px;
+  color: map-get($iconos, color);
+  padding-right: map-get($iconos, padding-right );
 }
 
 

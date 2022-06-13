@@ -59,6 +59,9 @@ footer {
     margin: 0%; }
     footer .footerA:hover {
       color: #BB8FCE; }
+  footer .fa-paw:before {
+    color: #4A235A;
+    padding-right: 5px; }
   footer .ulContactoFooter li {
     margin-bottom: 5px; }
 
