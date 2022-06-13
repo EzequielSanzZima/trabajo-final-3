@@ -27,10 +27,26 @@
     text-decoration: underline; }
 
 /*Footer*/
-.fondoFooter {
-  padding-top: 10px;
-  background-color: #8E44AD; }
-  .fondoFooter .navFooter {
+footer {
+  background-color: #8E44AD;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.9rem; }
+  footer .nombreFooter {
+    margin: 0px 0px 8px; }
+  footer .redesSocialesFooter {
+    display: flex;
+    justify-content: center; }
+    footer .redesSocialesFooter li {
+      padding-right: 5px; }
+    footer .redesSocialesFooter .redesSocialesFooterA {
+      color: white; }
+      footer .redesSocialesFooter .redesSocialesFooterA:hover {
+        color: #BB8FCE; }
+  footer .ulLinkFooter, footer .ulContactoFooter {
+    list-style: none; }
+    footer .ulLinkFooter li, footer .ulContactoFooter li {
+      margin-bottom: 5px; }
+  footer .footerA {
     display: block;
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-size: var(--bs-nav-link-font-size);
@@ -41,10 +57,10 @@
     color: white;
     padding: 0%;
     margin: 0%; }
-    .fondoFooter .navFooter:hover {
+    footer .footerA:hover {
       color: #BB8FCE; }
-  .fondoFooter .logoFooter {
-    width: 128px; }
+  footer .ulContactoFooter li {
+    margin-bottom: 5px; }
 
 .footerFinal {
   background-color: #7D3C98;
@@ -114,13 +130,13 @@
 .bodyCardContacto a p {
   margin: 0px; }
 
-a {
+.contactoA {
   color: white;
   text-decoration: none; }
-  a:hover, a:focus {
+  .contactoA:hover, .contactoA:focus {
     color: #23527c;
     text-decoration: underline; }
-  a:focus {
+  .contactoA:focus {
     outline: 5px auto;
     outline-offset: -2px; }
 
@@ -204,10 +220,14 @@ a {
         height: 330px; } }
   .animacionServicioIzquierda .divServicioTexto, .animacionServicioIzquierda .textoQuienSomos ul li::marker, .textoQuienSomos ul .animacionServicioIzquierda li::marker {
     font-size: 15px;
-    font-family: 'Work Sans', sans-serif; }
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px; }
     @media screen and (max-width: 768px) {
       .animacionServicioIzquierda .divServicioTexto, .animacionServicioIzquierda .textoQuienSomos ul li::marker, .textoQuienSomos ul .animacionServicioIzquierda li::marker {
         padding: 15px 48px 5px 48px !important; } }
+    .animacionServicioIzquierda .divServicioTexto .pTextoPeluqueria, .animacionServicioIzquierda .textoQuienSomos ul li::marker .pTextoPeluqueria, .textoQuienSomos ul .animacionServicioIzquierda li::marker .pTextoPeluqueria {
+      font-size: 16px;
+      line-height: 24px; }
     .animacionServicioIzquierda .divServicioTexto .divServicioTexto ul, .animacionServicioIzquierda .textoQuienSomos ul li::marker .divServicioTexto ul, .textoQuienSomos ul .animacionServicioIzquierda li::marker .divServicioTexto ul, .animacionServicioIzquierda .divServicioTexto .textoQuienSomos ul li::marker ul, .textoQuienSomos ul .animacionServicioIzquierda .divServicioTexto li::marker ul, .animacionServicioIzquierda .textoQuienSomos ul li::marker li::marker ul, .textoQuienSomos ul .animacionServicioIzquierda li::marker li::marker ul {
       list-style-position: inside; }
 

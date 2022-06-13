@@ -27,6 +27,7 @@
 
 /*caja*/
 
+
 .animacionServicioIzquierda{ /*Servicio peluqueria*/
     animation-duration: 0.4s;
     animation-name: anmiServicio;
@@ -44,17 +45,22 @@
     .divServicioTexto{ 
         font-size: 15px;
         font-family: 'Work Sans', sans-serif;
+        line-height: 24px;
             @include tablet{
                 padding: 15px 48px 5px 48px!important;
             }
+        .pTextoPeluqueria{
+            font-size: 16px;
+            line-height: 24px;
+        }
 
         .divServicioTexto ul {
             list-style-position: inside;      
             
         }
-        
     } 
 }
+
 
 
 

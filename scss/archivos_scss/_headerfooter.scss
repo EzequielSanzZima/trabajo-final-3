@@ -42,11 +42,37 @@
 
 
 /*Footer*/
-.fondoFooter{
-    padding-top: 10px;
+
+
+footer{
     background-color: $colorHeaderFooter;
-    
-    .navFooter{
+    font-family: map-get($textoParrafo , family);
+    font-size: 0.9rem;
+        .nombreFooter{
+            margin: 0px 0px 8px;
+        }
+        .redesSocialesFooter{
+            display: flex;
+            justify-content: center;
+            li{
+                padding-right: 5px;
+            }
+            .redesSocialesFooterA{
+                color: white;
+                &:hover{
+                    color:#BB8FCE;
+                }
+            }
+        }
+
+
+        .ulLinkFooter{
+            list-style: none;
+            li{
+                margin-bottom: 5px;
+            }
+        }
+        .footerA{
         display: block;
         padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
         font-size: var(--bs-nav-link-font-size);
@@ -58,21 +84,20 @@
         color:white;
         padding: 0%;
         margin: 0%;
-
-        &:hover{
-            color:#BB8FCE;
-            
+            &:hover{
+                color:#BB8FCE;
+            }
         }
-    }
-    
-    .logoFooter{
-        width: 128px;
-    }
+        .ulContactoFooter{
+            @extend .ulLinkFooter;
+            li{
+                margin-bottom: 5px;
+            }
+        }
 }
 
 .footerFinal{
-        background-color: $colorTopSub;
-        color: white;
+    background-color: $colorTopSub;
+    color: white;
 
 }
-
