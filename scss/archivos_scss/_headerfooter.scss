@@ -17,9 +17,24 @@
     .logoHeader{
         width: 120px;
         height:64px;
-        
+    }
+    .separador{
+        height: 38px;
+        width: 2px;
+        border-right: 1px solid #e3e3e3;
+        margin: 0 15px 0 11px;
+        @include tablet{
+            display: none;
+        }
+    }
+    .tituloHeader{
+        font-family: map-get($textoParrafo , family);
+        @include tablet{
+            display: none;
+        }
     }
 }
+
 
 .navCentro{
     padding: 0px 60px;

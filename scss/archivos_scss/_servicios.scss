@@ -49,19 +49,80 @@
             @include tablet{
                 padding: 15px 48px 5px 48px!important;
             }
-        .pTextoPeluqueria{
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        .divServicioTexto ul {
-            list-style-position: inside;      
-            
-        }
     } 
+}
+.pTextoPeluqueria{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.divServicioTexto ul {
+    list-style-position: inside;      
+    
 }
 
 
+
+/*Caja curso*/
+.imagenInformacionCurso{
+    height: 40vh;
+            @include tablet{
+                height: 330px;
+            }
+}
+.divServicioCurso{
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+        @include tablet{
+            padding: 15px 48px 5px 48px!important;
+    }
+    .pTextoCurso{
+        padding-top: 15px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.divServicioCurso ul li{
+    padding-top: 5px;
+}
+.botonIrAlCurso{
+    @extend .botonPDF;
+}
+
+
+/*Pagina curso*/
+.flechaVolverCurso{
+    text-decoration: none;
+    color: black;
+        &:hover{
+            color:#BB8FCE;
+        }
+}
+.divPaginaCurso{
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+}
+
+.ulCurso li{
+    padding-bottom: 5px;
+    &::marker{
+        font-size: 0px;
+    }
+    .fa-calendar:before, .fa-male:before, .fa-person:before, .fa-book:before, .fa-magnifying-glass:before, .fa-search:before, .fa-certificate:before{
+        color: map-get($iconos, color);
+        padding-right: map-get($iconos, padding-right );
+    }
+}
+.botonPDF{
+    text-decoration: none;
+    color: #4A235A;
+        &:hover{
+        color:#BB8FCE;
+        }
+}
 
 
 
