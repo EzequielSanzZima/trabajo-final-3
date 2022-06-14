@@ -15,8 +15,8 @@
     background-color: $colorHeaderFooter;
 
     .logoHeader{
-        width: 120px;
-        height:64px;
+        width: 85px;
+        height:45px;
     }
     .separador{
         height: 38px;
@@ -119,5 +119,28 @@ footer{
 .footerFinal{
     background-color: $colorTopSub;
     color: white;
-
+    .divTextoFooter {
+        @include tablet{
+            flex-direction: column;
+        }
+        div p{
+            padding: 0px;
+            margin: 0px;
+            @include tablet{
+                padding: 5px;
+            }
+        }
+    }
+    
+    .imgDataFiscal{
+        width: 25px;
+        height: 34px;
+    }
+}
+.aFooter{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color:#BB8FCE;
+    }
 }
