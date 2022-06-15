@@ -64,7 +64,13 @@ footer{
     font-family: map-get($textoParrafo , family);
     font-size: 0.9rem;
         .nombreFooter{
+            padding: 0px;
             margin: 0px 0px 8px;
+        }
+        .divFooterHr hr{
+            width: 120px;
+            margin: auto;
+            padding-bottom: 10px;
         }
         .redesSocialesFooter{
             display: flex;

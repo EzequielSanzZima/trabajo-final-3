@@ -45,7 +45,12 @@ footer {
   font-family: "Work Sans", sans-serif;
   font-size: 0.9rem; }
   footer .nombreFooter {
+    padding: 0px;
     margin: 0px 0px 8px; }
+  footer .divFooterHr hr {
+    width: 120px;
+    margin: auto;
+    padding-bottom: 10px; }
   footer .redesSocialesFooter {
     display: flex;
     justify-content: center; }
@@ -342,7 +347,8 @@ footer {
 body {
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #f3f2ef; }
 
 .btnColor {
   --bs-btn-bg: rgb(192, 76, 167);
