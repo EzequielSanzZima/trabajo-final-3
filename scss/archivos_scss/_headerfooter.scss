@@ -129,6 +129,9 @@ footer{
         @include tablet{
             flex-direction: column;
         }
+        @include celular{
+            align-items: center;
+        }
         div p{
             padding: 0px;
             margin: 0px;
